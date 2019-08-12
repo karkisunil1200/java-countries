@@ -11,7 +11,7 @@ public class Country {
     private long landMass;
     private int medianAge;
 
-    public Country(long id, String name, long population, long landMass, int medianAge) {
+    public Country( String name, long population, long landMass, int medianAge) {
         this.id = counter.incrementAndGet();
         this.name = name;
         this.population = population;
