@@ -2,7 +2,7 @@ package com.lambda.countries;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-public class CountryList {
+public class Country {
 
     private static final AtomicLong counter = new AtomicLong();
     private long id;
@@ -11,7 +11,7 @@ public class CountryList {
     private long landMass;
     private int medianAge;
 
-    public CountryList(long id, String name, long population, long landMass, int medianAge) {
+    public Country(long id, String name, long population, long landMass, int medianAge) {
         this.id = counter.incrementAndGet();
         this.name = name;
         this.population = population;
@@ -19,7 +19,7 @@ public class CountryList {
         this.medianAge = medianAge;
     }
 
-    public CountryList() {
+    public Country() {
 
     }
 
